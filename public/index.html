@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Form Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="head-container">
+                <div class="logo">
+                <h1>JSON Validator</h1>  
+              </div>
+                
+               
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Left Section (Input) -->
+        <div class="left-section">
+            <!-- <header>
+                Input Section Header
+            </header> -->
+            <nav>
+                Enter JSON Data :
+            </nav>
+            <form id="jsonForm">
+                <label for="jsonData"></label>
+                <textarea id="jsonData" rows="12" cols="40" required></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <!-- Add your input content here -->
+            <div id="errorContainer"></div>
+        </div>
+
+        <!-- Right Section (Output) -->
+        <div class="right-section">
+            <!-- <header>
+                Output Section Header
+            </header> -->
+            <nav>
+                JSON Form Editor :
+            </nav>
+            <div id="formEditor">
+                <!-- Dynamic form will be displayed here -->
+            </div>
+            <!-- Add your output content here -->
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

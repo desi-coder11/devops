@@ -1,0 +1,150 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define global styles for header and footer */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+}
+
+/* Define global styles for the navbar */
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    
+}
+
+/* Container for the two parts */
+.container {
+    display: flex;
+    height: 86.7vh;
+}
+
+/* Styles for the left section (input) */
+.left-section {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto;
+    font-weight: 600;
+}
+
+/* Styles for the right section (output) */
+.right-section {
+    flex: 1;
+    background-color: #ddd;
+    padding: 20px;
+    overflow-y: auto;
+    font-weight: 600;
+}
+
+/* Styles for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+/* Styles for the form fields */
+label, input {
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif; /* Add the Google Font name here */
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+#formEditor {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    margin-top: 30px;
+}
+
+/* JSON output formatting styles */
+pre {
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Add focus outline to JSON output part */
+#formEditor:focus {
+    outline: 2px solid #007bff;
+}
+
+/* Styles for the edited output of the JSON */
+#formEditor input[type="text"] {
+    font-size: 18px;
+    padding: 8px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#formEditor input[type="text"]:focus {
+    outline: 2px solid #007bff;
+}
+
+pre {
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Add focus outline to JSON output part */
+#formEditor:focus {
+    outline: 2px solid #007bff;
+}
+
+/* Styles for the edited output of the JSON */
+/* ... (existing edited output styles) ... */
+
+/* Styles for the error message */
+#errorContainer {
+    color: red;
+    font-size: 18px;
+    margin-top: 10px;
+    display: none;
+}
+
+#errorContainer::before {
+    content: '×';
+    margin-right: 5px;
+}
